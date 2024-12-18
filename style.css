@@ -16,6 +16,8 @@ body{
     transform: translate(-50%, -50%);
     background: #fff;
     border-radius: 10px;
+    text-align: center;
+    
 
 }
 .container p {
@@ -45,7 +47,14 @@ body{
     margin: 20px 0;
     font-weight: 500; 
 }
-.imgBox{
+#imgbox {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    margin-top: 20px;
+}
 
+#qrImage {
+    max-width: 100%;
+    height: auto;
 }
