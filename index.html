@@ -11,7 +11,7 @@
         <p>enter our text</p>
         <input type="text" placeholder="text or URL" id="qrText">
         <div id="imgbox">
-            <img src="" id="qrImage">
+            <img src="" id="qrImage">  <!--incharge sa pagdisplay sa atong site. missing ang src kay tungod sa qrimage.src na command -->
         </div>
 
         <button onclick="generateQR()">generate qr code</button>
@@ -20,12 +20,12 @@
 <script>
 
 let imgBox = document.getElementById("imgBox");
-let qrImage = document.getElementById("qrImage");
+let qrImage = document.getElementById("qrImage"); //kaning tulo is the script paras qrcode na maka fetch sa taas.
 let qrText = document.getElementById("qrText");
 
 
 function generateQR(){
-    qrImage.src = "https://quickchart.io/qr?text=" + qrText.value;
+    qrImage.src = "https://quickchart.io/qr?text=" + qrText.value; //qr code API link -incharge of generating the qr code
 }
 
 </script>
